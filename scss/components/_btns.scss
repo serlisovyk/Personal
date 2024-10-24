@@ -1,0 +1,30 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--primary-black);
+  border-radius: 4px;
+  width: 153px;
+  height: 56px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: var(--primary-white);
+
+  &:hover {
+    background: var(--primary-white);
+    color: var(--primary-black);
+  }
+
+  &:hover path {
+    stroke: var(--primary-black);
+  }
+
+  @media (max-width: 950px) {
+    font-size: 16px;
+    width: 120px;
+    height: 50px;
+  }
+}
