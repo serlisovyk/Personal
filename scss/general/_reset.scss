@@ -3,25 +3,23 @@
   margin: 0;
   border: 0;
 }
-
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 a:focus,
 a:active {
   outline: none;
 }
-
 nav,
 footer,
 header,
 aside {
   display: block;
 }
-
 html,
 body {
   height: 100%;
@@ -32,47 +30,38 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-
 input,
 button,
 textarea {
   font-family: inherit;
   outline: none;
 }
-
 input::-ms-clear {
   display: none;
 }
-
 button {
   background: none;
   cursor: pointer;
 }
-
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-
 a,
 a:visited {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: none;
 }
-
 ul li {
   list-style: none;
 }
-
 img {
   vertical-align: middle;
   max-width: 100%;
   height: auto;
 }
-
 h1,
 h2,
 h3,
@@ -99,38 +88,3 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
-@font-face {
-  font-family: "Sora";
-  src: url("../fonts/Sora-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Sora";
-  src: url("../fonts/Sora-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Sora";
-  src: url("../fonts/Sora-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Sora";
-  src: url("../fonts/Sora-ExtraBold.woff2") format("woff2");
-  font-weight: 800;
-  font-display: swap;
-}
-:root {
-  --error: #ef4444;
-  --primary-black: #000;
-  --primary-neutral: #404040;
-  --primary-white: #fff;
-  --zinc-100: #f4f4f5;
-  --zinc-200: #e4e4e7;
-  --zinc-300: #d4d4d8;
-  --zinc-500: #71717a;
-  --zinc-800: #27272a;
-}/*# sourceMappingURL=style.css.map */
