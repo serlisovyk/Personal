@@ -1,6 +1,6 @@
 import burger from './modules/burger.js'
 import accordion from './modules/accordion.js'
-// import tabs from './modules/tabs.js'
+import tabs from './modules/tabs.js'
 // import form from './modules/form.js'
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
     'experience__item-active'
   )
 
-  // tabs('.reviews__partner', '.reviews__item', 'rev-active')
+  tabs('.reviews__partner', '.reviews__item', 'rev-active')
 
   // form('form', 'input', 'textarea')
 })
