@@ -1,0 +1,29 @@
+.footer {
+  background-color: var(--primary-black);
+  padding-block: 24px;
+  color: var(--primary-white);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    color: var(--primary-white);
+
+    @include mobile-small {
+      font-size: 16px;
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+
+    @include mobile-small {
+      font-size: 14px;
+    }
+  }
+}
