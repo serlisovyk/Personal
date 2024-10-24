@@ -702,12 +702,15 @@ h3 span:nth-child(3) {
   letter-spacing: -0.02em;
 }
 .experience__item-text {
-  display: none;
-  margin-top: 30px;
+  opacity: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease;
 }
 .experience__item-active .experience__item-text {
-  display: block;
-  animation: changeOpacity 0.2s ease-in-out;
+  opacity: 1;
+  margin-top: 30px;
+  max-height: none;
 }
 @media (max-width: 767px) {
   .experience__item-text {

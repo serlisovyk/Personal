@@ -7,9 +7,9 @@ export default function burger(burgerSelector, navLinksSelector, navOpenSelector
 
   const navLinks = document.querySelectorAll(navLinksSelector)
 
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
+  navLinks.forEach(link =>
+    link.addEventListener('click', () =>
       document.documentElement.classList.remove(navOpenSelector)
-    })
-  })
+    )
+  )
 }
