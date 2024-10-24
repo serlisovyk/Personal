@@ -1,0 +1,77 @@
+.skills {
+  padding-bottom: 100px;
+
+  @include mobile {
+    padding-bottom: 70px;
+  }
+
+  &__title {
+    margin-bottom: 100px;
+
+    @media (max-width: 1150px) {
+      margin-bottom: 70px;
+    }
+    @include mobile {
+      margin-bottom: 40px;
+    }
+    @include mobile-small {
+      font-size: 40px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px 70px;
+
+    @include tablet {
+      gap: 20px;
+    }
+    @include mobile-small {
+      gap: 10px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background: var(--primary-white);
+    border: 2px solid var(--primary-black);
+    border-radius: 4px;
+    padding: 24px;
+    width: 186px;
+    aspect-ratio: 1;
+    transition: all 0.2s ease-in-out;
+
+    @include mobile {
+      width: 160px;
+    }
+
+    &:hover {
+      background-color: var(--primary-black);
+    }
+    &:hover .skills__text {
+      color: var(--primary-white);
+    }
+    &:hover path {
+      fill: var(--primary-white);
+    }
+    &:hover path:nth-child(2) {
+      fill: var(--primary-black);
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    color: var(--primary-black);
+    cursor: default;
+  }
+}
