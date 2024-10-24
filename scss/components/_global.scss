@@ -1,0 +1,129 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1310px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: var(--primary-black);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.white {
+  color: var(--primary-white) !important;
+}
+
+.status {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.white-bg {
+  background-color: var(--primary-white) !important;
+}
+
+.text {
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--zinc-500);
+}
+.links {
+  display: flex;
+  gap: 32px;
+
+  @include mobile {
+    justify-content: center;
+    gap: 24px;
+  }
+}
+.link {
+  border: 2px solid var(--primary-black);
+  border-radius: 4px;
+  padding: 16px;
+  width: 56px;
+  height: 56px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  @include mobile {
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+  }
+
+  &:hover {
+    background-color: var(--primary-black);
+    scale: 1.2;
+  }
+
+  & path {
+    fill: black;
+  }
+
+  &:hover path {
+    fill: white;
+  }
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-size: 48px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: var(--primary-black);
+
+  & span {
+    font-weight: 800;
+    margin-left: 16px;
+
+    &:nth-child(3) {
+      margin-right: 16px;
+      margin-left: 0;
+    }
+
+    @include mobile {
+      margin-left: 8px;
+
+      &:nth-child(3) {
+        margin-right: 8px;
+      }
+    }
+  }
+}
