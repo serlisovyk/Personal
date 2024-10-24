@@ -1,0 +1,123 @@
+.feedback {
+  padding-bottom: 80px;
+
+  @include tablet {
+    padding-bottom: 50px;
+  }
+
+  @include mobile {
+    padding-bottom: 30px;
+  }
+
+  ::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    color: var(--zinc-500);
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    @include tablet {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__input {
+    border: 1.4px solid var(--primary-black);
+    border-radius: 4px;
+    padding: 18px 24px;
+    height: 56px;
+    margin-bottom: 20px;
+
+    @include mobile {
+      padding: 14px 20px;
+      height: 50px;
+    }
+
+    & input {
+      width: 100%;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 125%;
+      letter-spacing: -0.02em;
+      color: var(--zinc-500);
+    }
+  }
+
+  &__textarea {
+    border: 1.4px solid var(--primary-black);
+    border-radius: 4px;
+    padding: 18px 24px;
+    width: 290px;
+    resize: none;
+    height: 140px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    color: var(--zinc-500);
+
+    @include mobile {
+      margin-bottom: 0;
+    }
+  }
+
+  &__form-bottom {
+    display: flex;
+    gap: 24px;
+
+    @include mobile-small {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+
+  &__content {
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    white-space: nowrap;
+    text-align: left;
+    margin-bottom: 40px;
+
+    & span {
+      margin-left: 0;
+    }
+
+    @include tablet {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      font-size: 40px;
+    }
+    @include mobile-small {
+      font-size: 32px;
+    }
+  }
+
+  &__text {
+    max-width: 610px;
+
+    @include tablet {
+      margin: 0 auto;
+    }
+
+    @include mobile-small {
+      font-size: 12px;
+    }
+  }
+}
