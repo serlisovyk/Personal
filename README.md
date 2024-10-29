@@ -12,7 +12,7 @@ https://personal5105.netlify.app/
   
   <img width="12" />
   
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="40" height="40" alt="CSS3" />
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sass-colored.svg" width="40" height="40" alt="Sass" />
 
   <img width="12" />
 
